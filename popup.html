@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/popup.css" />
+    <script src="./scripts/jquery-3.6.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+  <div class="header">
+      <div id="particles-js"></div>
+        <h1 id="ext_name">
+            <img
+                id="github_logo" class="github_logo" src="./assets/github.jpeg" alt="GitHub Logo">&nbsp;GitSync</b>
+        </h1>
+        <p id="tagline">From Concepts to Commit </p>
+        <hr>
+    </div>
+
+    <div id="authentication_phase" style="display:none;">
+        <p class="instructions">
+            Authenticate with GitHub to get started!
+        </p>
+        <button id="authentication_button"><img id="githublogo_button" class="github_logo" src="./assets/github.jpeg" alt="GfG Logo"><span>&nbsp;Authenticate</span></button>
+        <hr>
+    </div>
+
+    <div id="link_repo_phase" style="display:none;">
+        <p class="instructions">
+            Link a GitHub Repository.
+        </p>
+        <button>
+          <a id="link_repo_redirect" href="" target="_blank">
+            <img id="githublogo_button" class="github_logo" src="./assets/github.jpeg" alt="GfG Logo"><span>&nbsp;Link Repository</span>
+          </a>
+        </button>
+        <hr>
+    </div>
+
+    <div id="solve_and_push_phase" style="display:none;">
+        <div>Repository Link : 
+            <span id="repository_link" ></span>
+        </div>
+        <p class="instructions">
+          Problems Solved : <span id="successful_submissions">0</span>
+        </p>
+        <p class="solved">
+        
+          <span style="color: #2F8D46">&ensp; Easy </span>:
+          <span
+            id="successful_submissions_easy"
+            > 0
+          </span>
+          <span style="color: #2F8D46">&ensp; Medium </span>:
+          <span
+            id="successful_submissions_medium"
+            > 0
+          </span>
+          <span style="color: #2F8D46">&ensp; Hard </span>:
+          <span
+            id="successful_submissions_hard"
+            > 0
+          </span>
+        </p>
+        <hr>
+      </div>
+   
+
+
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/githubAuthentication.js"></script>
+    <script src="./scripts/particle.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</body>
+</html>
